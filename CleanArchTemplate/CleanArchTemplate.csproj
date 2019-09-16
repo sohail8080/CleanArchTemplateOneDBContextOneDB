@@ -192,7 +192,7 @@
     <Compile Include="BC\AccessControl\Manage\Presentation\ViewModels\FactorViewModel.cs" />
     <Compile Include="BC\AccessControl\Manage\Presentation\ViewModels\ManageLoginsViewModel.cs" />
     <Compile Include="BC\AccessControl\Manage\Presentation\ViewModels\IndexViewModel.cs" />
-    <Compile Include="BC\Home\Domain\Models\Class1.cs" />
+    <Compile Include="BC\Home\Domain\Models\Genre.cs" />
     <Compile Include="BC\Home\Domain\Persistence\UOW\HomeDbContext.cs" />
     <Compile Include="BC\Home\HomeAreaRegistration.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
@@ -203,6 +203,11 @@
     <Compile Include="BC\AccessControl\Account\Presentation\Controllers\AccountController.cs" />
     <Compile Include="BC\Home\Presentation\Controllers\HomeController.cs" />
     <Compile Include="BC\AccessControl\Manage\Presentation\Controllers\ManageController.cs" />
+    <Compile Include="Common\Migrations\201909161506369_InitialModel.cs" />
+    <Compile Include="Common\Migrations\201909161506369_InitialModel.Designer.cs">
+      <DependentUpon>201909161506369_InitialModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Migrations\Configuration.cs" />
     <Compile Include="Common\UOW\ApplicationDbContext.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
@@ -240,7 +245,9 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -313,7 +320,6 @@
     <Folder Include="Common\BaseClasses\Presentation\" />
     <Folder Include="Common\Exceptions\" />
     <Folder Include="Common\Helpers\" />
-    <Folder Include="Common\Migrations\" />
     <Folder Include="Common\Utilities\" />
     <Folder Include="Common\Views\Default\" />
     <Folder Include="Models\" />
@@ -330,6 +336,11 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Common\Migrations\201909161506369_InitialModel.resx">
+      <DependentUpon>201909161506369_InitialModel.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
