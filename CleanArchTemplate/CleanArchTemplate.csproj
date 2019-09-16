@@ -218,6 +218,10 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\CleanArchTemplateOneDBContextOneDB.mdf" />
+    <Content Include="App_Data\CleanArchTemplateOneDBContextOneDB_log.ldf">
+      <DependentUpon>CleanArchTemplateOneDBContextOneDB.mdf</DependentUpon>
+    </Content>
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -283,7 +287,6 @@
     <Content Include="Common\Views\_LoginPartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="BC\AccessControl\Account\Application\Interfaces\" />
     <Folder Include="BC\AccessControl\Account\Application\Services\Commands\" />
     <Folder Include="BC\AccessControl\Account\Application\Services\Queries\" />
