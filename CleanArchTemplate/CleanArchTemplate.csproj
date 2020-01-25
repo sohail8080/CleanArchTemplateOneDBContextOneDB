@@ -168,8 +168,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_Start\ApplicationSignInManager.cs" />
+    <Compile Include="App_Start\ApplicationUserManager.cs" />
+    <Compile Include="App_Start\EmailService.cs" />
     <Compile Include="App_Start\ExtendedRazorViewEngine.cs" />
     <Compile Include="App_Start\CustomViewEngine .cs" />
+    <Compile Include="App_Start\SmsService.cs" />
     <Compile Include="BC\AccessControl\Account\AccountAreaRegistration.cs" />
     <Compile Include="BC\AccessControl\Manage\ManageAreaRegistration.cs" />
     <Compile Include="BC\AccessControl\Account\Domain\Models\ApplicationUser.cs" />
@@ -197,7 +201,6 @@
     <Compile Include="BC\Home\HomeAreaRegistration.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
-    <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="BC\AccessControl\Account\Presentation\Controllers\AccountController.cs" />
@@ -209,7 +212,6 @@
     </Compile>
     <Compile Include="Common\Migrations\Configuration.cs" />
     <Compile Include="Common\UOW\ApplicationDbContext.cs" />
-    <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -325,7 +327,6 @@
     <Folder Include="Common\Helpers\" />
     <Folder Include="Common\Utilities\" />
     <Folder Include="Common\Views\Default\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
